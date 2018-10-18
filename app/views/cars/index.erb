@@ -1,0 +1,7 @@
+<h1>  CAR INDEX   </h1>
+
+<% @cars.each do |c| %>
+<%= link_to c.name, c %> <br>
+<li> <%= link_to "Edit", edit_car_path(c) %> </li>
+<li> <%= link_to "Delete", c, method: :delete %> </li> <br>
+<% end %> <br>

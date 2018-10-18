@@ -1,0 +1,10 @@
+<h1> CARS SHOW PAGE </h1>
+
+<p>
+<li> Name: <%= @car.name %> </li>
+<li> Color: <%= @car.color %> </li>
+<li> Miles: <%= @car.miles %> </li>
+<li> Owner: <%= @car.owner.name %> </li>
+<br>
+<%= link_to "Cars Index", cars_path %>
+</p>

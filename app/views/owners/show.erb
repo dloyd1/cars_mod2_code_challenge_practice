@@ -1,0 +1,16 @@
+<h1> OWNERS SHOW PAGE </h1>
+
+
+Owner Details: <li> Name: <%= @owner.name %> </li>
+<li> Age: <%= @owner.age %> </li>
+<br>
+Cars Owned:
+<% if @o_cars.empty? %>
+<li> <%= "None" %> </li> <br>
+<% else %>
+<% @o_cars.each do |c|  %>
+<li><%= c.name %></li>
+<% end %> <br>
+<% end %>
+<%= link_to "Owner Index", owners_path %>
+</p>

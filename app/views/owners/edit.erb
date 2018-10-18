@@ -1,0 +1,16 @@
+<h1> CREATE NEW OWNER </h1>
+
+<% if flash[:error] %>
+ERROR:
+  <% flash[:error].each do |e| %>
+  <li>  <%= e %> </li>
+  <% end %>
+<% end %> <br>
+
+<%= form_for @owner do |f| %>
+<%= f.label :name %>:
+<%= f.text_field :name %> <br>
+<%= f.label :age %>:
+<%= f.number_field :age%> <br>
+<%= f.submit %>
+<% end %>
